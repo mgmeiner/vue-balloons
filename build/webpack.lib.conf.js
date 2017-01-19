@@ -22,5 +22,10 @@ module.exports = merge(baseWebpackConfig, {
       }
     }),
     new webpack.optimize.OccurrenceOrderPlugin()
-  ]
+  ],
+  vue: {
+    loaders: {
+      less: 'vue-style-loader!css-loader!less-loader'
+    }
+  }
 })

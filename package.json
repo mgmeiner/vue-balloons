@@ -5,8 +5,8 @@
   "author": "Michael Gmeiner",
   "license": "MIT",
   "scripts": {
-    "create:demo": "node build/build.js",
-    "create:lib": "node build/lib.js"
+    "create:demo": "node build/runWebpack.js demo",
+    "create:lib": "node build/runWebpack.js lib"
   },
   "peerDependencies": {
     "vue": "2.1.x"

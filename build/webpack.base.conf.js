@@ -9,9 +9,7 @@ module.exports = {
     extensions: ['', '.js', '.vue', '.json'],
     fallback: [path.join(__dirname, '../node_modules')],
     alias: {
-      'vue$': 'vue/dist/vue.common.js',
-      'src': path.resolve(__dirname, '../src'),
-      'components': path.resolve(__dirname, '../src/components')
+      'vue$': 'vue/dist/vue.common.js'
     }
   },
   resolveLoader: {
@@ -27,16 +25,14 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel',
         include: [
-          path.join(projectRoot, 'lib')
+          path.join(projectRoot, 'lib'),
+          path.join(projectRoot, 'demo')
         ],
         exclude: /node_modules/
       }
     ]
   },
   vue: {
-    loaders: {
-      less: 'vue-style-loader!css-loader!less-loader'
-    },
     postcss: [
       require('autoprefixer')({
         browsers: ['last 2 versions']
