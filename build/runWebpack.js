@@ -1,4 +1,3 @@
-require('./check-versions')()
 require('shelljs/global')
 
 var webpack = require('webpack')
