@@ -9,7 +9,7 @@ var env = process.env.NODE_ENV;
 
 module.exports = merge(baseWebpackConfig, {
   entry: {
-    'vue-balloons-demo': './demo/main.js'
+    'vue-balloons-demo': path.resolve(__dirname, '../demo/main.js')
   },
   output: {
     path: path.resolve(__dirname, '../dist/demo'),
