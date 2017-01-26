@@ -5,8 +5,8 @@
   "author": "Michael Gmeiner",
   "license": "MIT",
   "scripts": {
-    "create:demo": "node build/runWebpack.js demo",
-    "create:lib": "node build/runWebpack.js lib",
+    "build:demo": "node build/build.js demo",
+    "build:lib": "node build/build.js lib",
     "dev": "node build/devServer.js"
   },
   "peerDependencies": {
