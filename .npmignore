@@ -1,0 +1,5 @@
+demo/
+build/
+dist/demo/
+.vscode/
+.editorconfig
